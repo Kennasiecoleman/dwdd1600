@@ -24,32 +24,40 @@ header{
 
 /* navigation formatting */
 
-nav{
-  background-color: #f2b705;
-}
-
 nav ul {
   margin: 0;
   padding: 0 10px;
-  list-style-type: none;
   display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
-nav a {
+nav li.left {
   display:block;
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 35px;
+  color: #2b2329;
+  font-weight: 600;
+}
+
+nav li.right {
+  padding: 20px 20px;
+  font-size: 30px;
+  display:block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
   color: #024873;
-  font-weight: 900;
 }
 
-nav li.active a {
-  background-color: #024873;
-  color: #f2b705;
+nav ul li a.active {
+  font-weight: 600;
 }
 
-nav a:hover {
+nav ul li a:hover {
   color: white;
 }
 
