@@ -1,8 +1,10 @@
 
 body {
-  font-family: "Merriweather", sans-serif;
   font-weight: 400;
   font-size: 16px;
+
+  font-family: "Merriweather", serif;
+  
 }
 
 /* header stuff here */
@@ -18,7 +20,7 @@ h1 {
 }
 
 header{
-  background-color: #eaeaea;
+  background-color: #E6F3FF;
   padding: 1rem 10px;
 }
 
@@ -36,9 +38,9 @@ nav li.left {
   display:block;
   padding: 20px 20px;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 2.5rem;
   color: #2b2329;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 nav li.right {
@@ -49,12 +51,12 @@ nav li.right {
 
 nav ul li a {
   text-decoration: none;
-  font-weight: 500;
-  color: #024873;
+  font-weight: 300;
+  color: black;
 }
 
 nav ul li a.active {
-  font-weight: 600;
+  color: #114D80;
 }
 
 nav ul li a:hover {
@@ -68,34 +70,33 @@ main {
 }
 
 main h1 {
-  color: #b40412;
+  color: #5897CC;
 }
 
 main h2 {
-  color: #024873;
+  color: #114D80;
   margin-bottom: .2rem;
 }
 
 main p {
-  color: #eaac0e;
+  color: black;
   margin: 0;
 }
 
 main ol {
   padding: .5rem 30px;
-  background-color: #efefef;
-  list-style-type: lower-roman;
+  list-style-type:decimal;
 }
 
 main dl dt {
-  color: #b40412;
+  color: #114D80;
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 main dl dd {
-  color: #024873;
-  font-size: .9rem;
+  color: #5897CC;
+  font-size: 1rem;
 }
 
 main ul {
@@ -104,9 +105,9 @@ main ul {
 
 main address {
   font-weight: 400;
-  background-color: #f2b705;
+  background-color: #6EBDFF;
   padding: .5rem;
-  border: 3px solid #024873;
+  border: 3px solid #114D80;
   border-radius: .5rem;
   width: 200px;
   border-style: groove;
@@ -115,7 +116,7 @@ main address {
 /* format footer section */
 
 footer {
-  background-color: #eaeaea;
+  background-color: #E6F3FF;
   text-align:center;
   color: #333333;
 }
