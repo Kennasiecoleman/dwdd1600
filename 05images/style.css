@@ -1,8 +1,11 @@
 
+
 body {
-  font-family: "Merriweather", sans-serif;
   font-weight: 400;
   font-size: 16px;
+
+  font-family: "Merriweather", serif;
+  
 }
 
 /* header stuff here */
@@ -18,39 +21,46 @@ h1 {
 }
 
 header{
-  background-color: #eaeaea;
+  background-color: #E6F3FF;
   padding: 1rem 10px;
 }
 
 /* navigation formatting */
 
-nav{
-  background-color: #f2b705;
-}
-
 nav ul {
   margin: 0;
   padding: 0 10px;
-  list-style-type: none;
   display: flex;
-  height:auto;
+  justify-content: space-between;
+  padding: 0;
 }
 
-nav a {
+nav li.left {
   display:block;
-  padding: 10px 20px;
+  padding: 20px 20px;
   text-decoration: none;
-  font-size: 50px;
-  color: #024873;
-  font-weight: 900;
+  font-size: 2.5rem;
+  color: #2b2329;
+  font-weight: 700;
 }
 
-nav li.active a {
-  background-color: #024873;
-  color: #f2b705;
+nav li.right {
+  padding: 20px 20px;
+  font-size: 30px;
+  display:block;
 }
 
-nav a:hover {
+nav ul li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+}
+
+nav ul li a.active {
+  color: #114D80;
+}
+
+nav ul li a:hover {
   color: white;
 }
 
@@ -61,34 +71,33 @@ main {
 }
 
 main h1 {
-  color: #b40412;
+  color: #5897CC;
 }
 
 main h2 {
-  color: #024873;
+  color: #114D80;
   margin-bottom: .2rem;
 }
 
 main p {
-  color: #eaac0e;
+  color: black;
   margin: 0;
 }
 
 main ol {
   padding: .5rem 30px;
-  background-color: #efefef;
-  list-style-type: lower-roman;
+  list-style-type:decimal;
 }
 
 main dl dt {
-  color: #b40412;
+  color: #114D80;
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 main dl dd {
-  color: #024873;
-  font-size: .9rem;
+  color: #5897CC;
+  font-size: 1rem;
 }
 
 main ul {
@@ -97,13 +106,15 @@ main ul {
 
 main address {
   font-weight: 400;
-  background-color: #f2b705;
+  background-color: #6EBDFF;
   padding: .5rem;
-  border: 3px solid #024873;
+  border: 3px solid #114D80;
   border-radius: .5rem;
   width: 200px;
   border-style: groove;
 }
+
+/* figures formatting section */
 
 figure.wrapped {
     width: 30%;
@@ -141,8 +152,7 @@ div.gallery figcaption {
 /* format footer section */
 
 footer {
-  background-color: #eaeaea;
+  background-color: #E6F3FF;
   text-align:center;
   color: #333333;
-  clear:both;
 }
