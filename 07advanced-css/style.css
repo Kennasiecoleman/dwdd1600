@@ -197,8 +197,8 @@ main ul {
 
 .myform :required {
     background-color: rgba(17,77,128,0.1);
+    background-image: linear-gradient(to bottom, #c5d9eb, #edf2f7);
 }
-
 .myform [type=submit] {
     background-color: #43a0b6;
     border: none;
