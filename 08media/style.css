@@ -1,0 +1,309 @@
+/* this is going to prevent problems with different browsers */
+* {box-sizing: border-box;}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+
+  font-family: "Merriweather", serif;
+  
+}
+
+/* header stuff here */
+
+header span {
+  font-size:2rem;
+  font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header{
+  background-color: #E6F3FF;
+  color: black;
+  padding: 1rem 10px;
+}
+nav{
+  background-color: #E6F3FF;
+}
+
+/* small collumn format */
+@media only screen and (max-width: 900px){
+  .big{
+    display: none;
+  }
+  .line{
+    display: none;
+  }
+  header{
+    text-align: center;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0 auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    border-bottom: solid 1px #aaa;
+  }
+
+}
+
+/* medium screen format */
+@media only screen and (min-width: 901px){
+.big{
+  display: none;
+}
+  nav ul {
+    margin: 0;
+    padding: 0 auto;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+nav li {
+  display:block;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+nav li.line{
+  font-weight: 300;
+  color: #114D80;
+}
+}
+
+/* Large screen format*/
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+nav li.left {
+  display:block;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+nav li.right {
+  padding: 20px 20px;
+  font-size: 30px;
+  display:block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+}
+
+nav ul li a.active {
+  color: #114D80;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* main section formatting here */
+
+main {
+  padding: 1rem 2vw;
+}
+
+main h1 {
+  color: #114D80;
+}
+
+main h2 {
+  color: #114D80;
+  margin-bottom: .2rem;
+}
+
+main p {
+  color: black;
+  margin: 0;
+}
+
+main ol {
+  padding: .5rem 30px;
+  list-style-type:decimal;
+}
+
+main dl dt {
+  color: #114D80;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+main dl dd {
+  color: #5897CC;
+  font-size: 1rem;
+}
+
+main ul {
+  list-style-type:circle;
+}
+
+
+/* form stuff here */
+
+.myform fieldset {
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myform legend {
+    color:#43a0b6;
+    font-size: .8rem;
+}
+
+.myform label {
+    margin: .5rem;
+}
+ 
+.myform label, .myform select, .myform [type=text], .myform [type=tel], .myform [type=email], .myform textarea{
+    display: block;
+}
+
+.myform select, .myform [type=text], .myform [type=tel], .myform [type=email], .myform textarea{
+    border: 1px solid #888;
+    padding: .3rem;
+    width: 250px;
+    font-weight: 200;
+}
+
+.myform textarea{
+    height: 6rem;
+}
+
+.myform :required {
+    background-color: rgba(17,77,128,0.1);
+    background-image: linear-gradient(to bottom, #c5d9eb, #edf2f7);
+}
+.myform [type=submit] {
+    background-color: #43a0b6;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0 0 1vw;
+    color: white;
+}
+/* figures formatting section */
+table.print{
+    width: 100%;
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+table.print th {
+    background-color: #E6F3FF;
+    color: black;
+    padding: .5rem 2vw;
+    text-align: left;
+
+}
+table.print td {
+    color: #114D80;
+    padding: .4rem 2vw;
+}
+
+table.print tr:nth-child(odd) {
+    background-color: #f1f0f0;
+}
+
+table.print tr:hover {
+    background-color: rgba(39, 93, 137, 0.2);
+}
+
+/* figures formatting section */
+
+figure.full img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+figure.full {
+  margin: 0;
+    float: right;
+}
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: left;
+    padding-right: 2rem;
+    padding-bottom: .5rem;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+figure.gallery {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+div.gallery figure{
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figure img{
+  width: 300px;
+  height: auto;
+}
+div.gallery img:hover {
+  box-shadow: 6px 6px 10px #333333;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    padding: 1rem 0;
+}
+figure figcaption{
+  text-align: center;
+}
+
+/* format footer section */
+
+footer {
+  background-color: #E6F3FF;
+  text-align:center;
+  color: #333333;
+}
+
+header, nav, main, footer{
+  max-width: 80rem;
+  margin: 0 auto;
+}
